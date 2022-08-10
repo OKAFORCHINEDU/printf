@@ -1,5 +1,4 @@
 #include "main.h"
-#ifndef MAIN_H
 
 void print_buffer(char buffer[], int *buff_ind);
 
