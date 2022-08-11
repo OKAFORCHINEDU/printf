@@ -11,7 +11,7 @@
  * @width: get width
  * @precision: Precision specification
  * @size: Size specifier
- *
+ * @sizeable: documentation to show apecificatopn and scalability
  * Return: Number of chars printed.
  *
  */
