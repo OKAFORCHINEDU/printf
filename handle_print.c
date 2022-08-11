@@ -10,7 +10,7 @@
  * @width: get width.
  * @precision: Precision specification
  * @size: Size specifier
- *
+ * @sizeable: work needs to be scaled
  * Return: 1 or 2;
  *
  */
