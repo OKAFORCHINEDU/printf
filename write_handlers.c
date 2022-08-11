@@ -60,7 +60,7 @@ int handle_write_char(char c, char buffer[],
  * @width: get width.
  * @precision: precision specifier
  * @size: Size specifier
- *
+ * @sizeable coding to make it easier
  *
  * Return: Number of chars printed.
  *
