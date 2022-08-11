@@ -192,7 +192,7 @@ int write_unsgnd(int is_negative, int ind, char buffer[],
 		padd = '0';
 	if (width > length)
 	{
-		for (i = 0; i < width - length; i + 1; i++)
+		for (i = 0; i < width - length; i++)
 			buffer[i] = padd;
 		buffer[i] = '\0';
 		if (flags & F_MINUS) /* Asign extra char to left of buffer [buffer>padd]*/
@@ -200,10 +200,11 @@ int write_unsgnd(int is_negative, int ind, char buffer[],
 			return (write(1, &buffer[ind], length) + write(1, &buffer[0], i));
 		}
 		else /* Asign extra char to left of padding [padd>buffer]*/
+		{
 			return (write(1, &buffer[0], i) + write(1, &buffer[ind], length));
+		}
 	}
-}
-return (write(1, &buffer[ind], length));
+	return (write(1, &buffer[ind], length));
 
 }
 
